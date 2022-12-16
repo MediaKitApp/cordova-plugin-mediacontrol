@@ -11,10 +11,11 @@
   "keywords": [
     "ecosystem:cordova",
     "cordova-android",
+    "cordova-ios",
     "ionic",
     "audio",
     "audiomanager",
-    "toggle"
+    "mediacontrols"
   ],
   "author": "InteApps.com",
   "license": "ISC"

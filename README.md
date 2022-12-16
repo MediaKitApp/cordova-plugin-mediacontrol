@@ -3,12 +3,42 @@
 
 Enable speaker mode and correctly display the multimedia volume when lowering or raising.
 
+Although the object is attached to the global scoped `window`, it is not available until after the `deviceready` event.
+
+* Cordova 
+```js
+document.addEventListener("deviceready", onDeviceReady, false);
+function onDeviceReady() {
+  console.log(MediaControls);
+}
+```
+    
+* Ionic
+ ```js
+ /* Create interface for working */
+window.MediaControls.setModeAudio(...) 
+```
+    
 ## Install Ionic / Cordova
 
+* Cordova
 ```bash
-npm i https://github.com/Spearking/cordova-plugin-mediacontrol --force
+npm i cordova-plugin-media-control
+cordova plugin add cordova-plugin-media-control
+```
+* Ionic
+```bash
+npm i cordova-plugin-media-control
 npx cap sync
 ```
+
+
+# Permissions Android
+```xml
+<uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+```
+
+
 
 ## API
 

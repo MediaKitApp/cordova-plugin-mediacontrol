@@ -1,6 +1,9 @@
 <?xml version='1.0' encoding='utf-8'?>
-<plugin id="cordova-plugin-media-controls" version="1.0.0" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
-    <name>MediaControls</name>
+<plugin id="cordova-plugin-media-controls" version="1.0.2" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+    <name>cordova-plugin-media-control</name>
+    <description>Plugin for Cordova (or Ionic) to enable speaker mode and correctly display the multimedia volume when lowering or raising.</description>
+    <keywords>cordova,android,ios,audiomanager,ionic,audio,mediacontrols</keywords>
+    <repo>https://github.com/Spearking/cordova-plugin-mediacontrol.git</repo>
     <js-module name="MediaControls" src="www/MediaControls.js">
         <clobbers target="MediaControls" />
     </js-module>

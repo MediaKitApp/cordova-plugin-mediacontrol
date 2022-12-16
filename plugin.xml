@@ -4,6 +4,17 @@
     <js-module name="MediaControls" src="www/MediaControls.js">
         <clobbers target="MediaControls" />
     </js-module>
+     <platform name="ios">
+        <config-file target="config.xml" parent="/*">
+			<feature name="MediaControlsPlugin">
+				<param name="ios-package" value="MediaControlsPlugin" />
+			</feature>
+        </config-file>
+        <header-file src="src/ios/MediaControlsPlugin.h" />		
+        <source-file src="src/ios/MediaControlsPlugin.m" />
+        <framework src="AVFoundation.framework" />
+		<framework src="AudioToolbox.framework" />
+    </platform>
     <platform name="android">
         <edit-config file="AndroidManifest.xml" mode="merge" target="/manifest/application/activity[@android:name='MainActivity']">
             <activity android:resizeableActivity="true" 

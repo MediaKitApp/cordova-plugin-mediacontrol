@@ -1,2 +1,2 @@
-# capacitor-plugin-mediacontrol
-capacitor-plugin-mediacontrol
+# cordova-plugin-mediacontrol
+cordova-plugin-mediacontrol

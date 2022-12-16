@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="cordova-plugin-media-controls" version="1.0.0" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+    <name>MediaControls</name>
+    <js-module name="MediaControls" src="www/MediaControls.js">
+        <clobbers target="MediaControls" />
+    </js-module>
+    <platform name="android">
+        <edit-config file="AndroidManifest.xml" mode="merge" target="/manifest/application/activity[@android:name='MainActivity']">
+            <activity android:resizeableActivity="true" 
+            android:configChanges="screenSize|smallestScreenSize|screenLayout|orientation" 
+            android:launchMode="singleTask"></activity>
+        </edit-config>
+        <config-file parent="/*" target="res/xml/config.xml">
+            <feature name="MediaControls">
+                <param name="android-package" value="com.mediacontrols.MediaControlsPlugin" />
+            </feature>
+        </config-file>
+        <config-file target="AndroidManifest.xml" parent="/manifest">
+			<uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+        </config-file>
+        <source-file src="src/android/com/mediacontrols/MediaControlsPlugin.java" target-dir="src/com/mediacontrols" />
+    </platform>
+</plugin>

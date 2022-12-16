@@ -1,0 +1,21 @@
+{
+  "name": "cordova-plugin-media-control",
+  "version": "1.0.0",
+  "description": "Plugin to switch between speaker and headphone when playing audio support for Android",
+  "cordova": {
+    "id": "cordova-plugin-media-control",
+    "platforms": [
+      "android"
+    ]
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android",
+    "ionic",
+    "audio",
+    "audiomanager",
+    "toggle"
+  ],
+  "author": "InteApps.com",
+  "license": "ISC"
+}

@@ -1,6 +1,7 @@
 #import "AudioTogglePlugin.h"
 #import <AudioToolbox/AudioToolbox.h>
 #import <AVFoundation/AVFoundation.h>
+#import "MediaControlsPlugin.h"
 
 @implementation MediaControlsPlugin
 
